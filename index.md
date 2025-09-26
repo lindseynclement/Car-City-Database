@@ -8,15 +8,14 @@ title: Car City Sales Management System
 ## Table of contents
 
 * [Overview](#overview)
-* [Deployment](#deployment)
 * [User Guide](#user-guide)
-* [Community Feedback](#community-feedback)
-* [Developer Guide](#developer-guide)
-* [Development History](#development-history)
-* [Continuous Integration](#continuous-integration)
-* [Walkthrough videos](#walkthrough-videos)
-* [Example enhancements](#example-enhancements)
-* [Team](#team)
+* [Landing Page](#landing-page)
+* [Customers Page](#customerscustomer-management-page)
+* [Employees Page](#employeesemployee-management-page)
+* [Cars Page](#carscar-management-page)
+* [Car Models Page](#car-modelscar-models-management-page)
+* [Repairs Page](#repairrepairs-management-page)
+* [Transactions Page](#transactionstransaction-management-page)
 
 ## Overview
 
@@ -36,7 +35,7 @@ Car City Sales Management System was created to simulate how a dealership manage
 
 ## User Guide
 
-This section provides an overview of Car City Sales Management System's main features and how dealership admin can interact with the system.
+This section provides an overview of Car City Sales Management System's main features and how dealership staff and admin can interact with the system.
 
 ### Landing Page
 
@@ -44,92 +43,84 @@ The landing page displays the application's name and purpose.
 
 ![](images/landing-page.png)
 
-### Recipe Search and Filters
+### Customers/Customer Management Page
 
-The recipe search page allows students to explore a variety of meals and snacks, with filters for dietary restrictions and ingredient availability. Each recipe page includes:
-- Step-by-step instructions
-- A list of ingredients, prices, and sources
-- Dietary tags (e.g., vegan, gluten-free)
-- Estimated preparation time and servings
+The Customer Management page allows Car City staff to view, add, edit, and delete customer records to keep information accurate and up to date. Each customer entry includes:
+- First and last name
+- City, state, and optional address details
+- Email address
+- Phone number
+- Actions for editing or deleting the customer’s information
 
-![](images/recipe-page-1.png)
+At the bottom of the page, staff can use the Add New Customer form to enter complete details for a new customer, ensuring all relevant contact and location information is recorded in the system.
 
-![](images/recipe-page-2.png)
+![](images/customers-page.png)
 
-![](images/recipe-page-4.png)
+### Employees/Employee Management Page
 
-### Vendor Contributions
+The Employee Management page allows Car City admin to view, add, edit, and delete employee records to keep information accurate and up to date. Each employee entry includes:
+- First and last name
+- Job title
+- Checkbox for Is Dealer (to indicate if the employee works as a car dealer on the sales floor)
+- Phone number
+- Actions for editing or deleting the employee’s information
 
-Local vendors can create profiles to list available ingredients, prices, and sizes, which helps students easily find the ingredients they need nearby.
+![](images/employees-page.png)
 
-### Admin Dashboard
+At the bottom of the page, dealership admin can use the Add New Employee form to enter complete details for a new employee, ensuring all relevant contact and job title information is recorded in the system.
 
-Admins have additional privileges, such as approving or editing recipes, managing vendor contributions, and ensuring the quality of user-generated content.
+### Car/Cars Management Page
 
-## Community Feedback
+The Car Management page allows Car City staff to organize and track the dealership’s inventory of vehicles. Each car entry includes:
+- Car model
+- Data received
+- Whether the vehicle is pre-owned or new
+- Whether the vehicle is currently for sale
+- Actions for editing or deleting car information
 
-We welcome feedback from the College Cooking community! Please share your experiences and suggestions to help us improve the application through our [Feedback Form](https://forms.gle/feedback-link).
+![](images/cars-page.png)
 
-## Developer Guide
+At the bottom of the page, staff can use the Add New Car form to register a vehicle into the system. The form includes options to select the model, enter the received date, and mark if the car is pre-owned or available for sale.
 
-This section provides developers with information on setting up, deploying, and maintaining College Cooking.
+### Car Models/Car Models Management Page
 
-### Installation
+The Car Models Management page allows Car City staff to organize and track the dealership’s inventory of various car makes and models. Each car model entry includes:
+- Car make
+- Car model
+- Car model year
+- Actions for editing or deleting repair information
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory and install dependencies with:
-   ```bash
-   npm install
+![](images/car-model-page.png)
 
-   createdb collegecooking
+At the bottom of the page, staff can use the Add New Car Model form to register a car make into the system. The form includes options to select the make, model, and year of the car. 
 
-   npx generate
+### Repair/Repairs Management Page
 
-   npx migrate dev
+The Repair Management page allows Car City staff to record and track vehicle service history. Each repair entry includes:
+- Employee responsible for the repair (with ID reference)
+- Car being serviced (with ID reference)
+- Repair cost
+- Service date
+- Service type (e.g., oil change, brake replacement)
+- Notes with additional details about the repair
+- Actions for editing or deleting repair information
 
-   npm run dev 
+![](images/repairs-page.png)
 
+At the bottom of the page, staff can use the Add New Repair form to log new service details. The form requires the employee ID, car ID, cost, service date, service type, and optional notes to provide a complete service record for each vehicle.
 
-#### ESLint
+## Transactions/Transaction Management Page
 
-BowFolios includes a [.eslintrc](//eslintrcfile) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+The Transaction Management page allows Car City staff to track vehicle sales and related financial records. Each transaction entry includes:
+- Customer associated with the purchase (with ID reference)
+- Employee handling the transaction (with ID reference)
+- Car involved in the transaction (with ID reference)
+- Transaction date
+- Transaction amount
+- Payment status (whether the purchase has been paid)
+- Actions for editing or deleting transaction details
 
-```
-npm run lint
-```
+![](images/transactions-page.png)
 
-ESLint should run without generating any errors.
+At the bottom of the page, staff can use the Add New Transaction form to record a new sale. The form requires a customer ID, car ID, employee ID, date, cost, and payment status to ensure accurate financial tracking and sales reporting.
 
-It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
-
-## Milestones
-
-The objective of Milestone 1 was to design HTML mockups representing the core pages of the BowFolio system. This milestone provided a visual structure and helped plan the layout and navigation.
-
-Milestone 1 was managed using [College Cooking Milestone Board M1](link):
-
-![](images/project-board-1.png)
-
-### Milestone 2: Data model development
-
-In Milestone 2, we focused on developing the data model, which included setting up MongoDB collections and implementing the operations required to support BowFolio’s functionality. This step was crucial for the backend infrastructure, enabling data storage, retrieval, and management within the application.
-
-Milestone 2 was managed using [College Cooking Milestone Board M2](link):
-
-![](images/project-board-2.png)
-
-## Milestone 3: Final touches
-
-The purpose of Milestone 3 was to polish the codebase, address any remaining UI issues, and ensure a smooth user experience. This final pass involved debugging, enhancing styling, and improving overall functionality.
-
-Milestone 3 was managed using [College Cooking Milestone Board M3](link):
-
-![](images/project-board-3.png)
-
-As of the time of writing, this screenshot shows that there is an ongoing task (i.e. this writing).
-
-
-
-## Team
-
-College Cooking is designed, created and built by [Anaya Cole](https://anayaemily.github.io/), [Lindsey Clement](//insert link), [Christina Holthe](https://chrshol.github.io/) and [Kayla Young](https://kaylay04.github.io/).
