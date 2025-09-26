@@ -1,3 +1,8 @@
+---
+layout: default
+title: College Cooking
+---
+
 # College Cooking
 
 ## Table of contents
