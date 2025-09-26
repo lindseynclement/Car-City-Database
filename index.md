@@ -1,9 +1,9 @@
 ---
 layout: default
-title: College Cooking
+title: Car City Sales Management System
 ---
 
-# College Cooking
+# Car City Sales Management System
 
 ## Table of contents
 
@@ -20,29 +20,29 @@ title: College Cooking
 
 ## Overview
 
-College Cooking is an application that helps college students make affordable, healthy, and accessible meals. It provides students with recipes that respect common constraints such as limited kitchen resources, limited cooking skills, limited time, and limited access to grocery stores.
+Car City Sales Management System is an application designed for the fictional dealership Car City. It enables efficient management of customers, employees, vehicles, repairs, and transactions. The system provides full functionality to add, edit, and delete records, ensuring the dealership can seamlessly track and organize every aspect of its operations.
 
 ### Key Features
 
-* Recipes designed for basic kitchen setups, primarily using a toaster oven or microwave.
-* Ingredients that are easy to find within walking distance of campus.
-* Customizable filters for dietary preferences (e.g., vegan, gluten-free).
-* Estimated cost and serving size for each recipe.
-* Estimated preparation time for each recipe.
+* Manage customers, employees, vehicles, repairs, and transactions in one system.
+* Add, edit, and delete records to keep information accurate and up to date.
+* Track car sales and service history for better customer support.
+* Maintain organized employee and customer databases.
+* Streamline dealership operations by connecting sales, service, and management functions.
 
 ### Purpose
 
-Many college students resort to fast food or vending machine snacks due to limited resources, which impacts both their health and budget. College Cooking aims to improve student nutrition and support a healthier lifestyle by making cooking accessible and affordable.
+Car City Sales Management System was created to simulate how a dealership manages its day-to-day operations. The application provides tools to organize records, track important business activities, and ensure smooth communication between departments. By integrating sales, repairs, and personnel management, Car City is able to operate more efficiently and provide better service to customers.
 
 ## User Guide
 
-This section provides an overview of College Cooking's main features and how students, vendors, and admins can interact with the system.
+This section provides an overview of Car City Sales Management System's main features and how dealership admin can interact with the system.
 
 ### Landing Page
 
-The landing page introduces new users to College Cooking, with easy navigation to sign up or sign in.
+The landing page displays the application's name and purpose.
 
-![](images/landing-page-1.png)
+![](images/landing-page.png)
 
 ### Recipe Search and Filters
 
